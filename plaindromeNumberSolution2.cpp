@@ -18,9 +18,6 @@ public:
         
     }
     bool isPalindrome(int x) {
-        int n=x;
-        int val=0;
-        int res=0;
         vector<int>v;
         getdigits(v,x);
         int start=0;
@@ -33,21 +30,6 @@ public:
             end--;
         }
         return true;
-        /*
-        cout<<v[1]<<endl;
-        while(n>0)
-        {
-            res=n%10;
-            n=n/10;
-            val=(val*10)+res;
-            cout<<"val=="<<val<<endl;
-            
-        }
-        if(val==x)
-            return true;
-        else
-            return false;
-        */
     }
 };
 /*
